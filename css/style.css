@@ -10,6 +10,9 @@ html{
 }
 
 body{
+	background-color: #E7E4D3;
+}
+/*body{
 	background-image: url(../img/brushes.jpg);
 	display: grid;
 	grid-template-columns: 30vw 40vw 30vw;
@@ -17,10 +20,10 @@ body{
 	grid-template-areas: "header header header" 
 	 "main main nav" 
 	"footer footer footer";	
-}
+}*/
 
 /*empieza encabezado*/
-
+/*
 header{
 	grid-area: header;
 	display: flex;
@@ -39,13 +42,13 @@ h1{
 	text-decoration: none;
 	text-align: center;
 	color: darkblue;
-}
+}*/
 
 /*termina encabezado*/
 
 /*empieza nav*/
 
-nav{
+/*nav{
 	grid-area: nav;
 	border-style: none;
 	margin: 15px;
@@ -80,12 +83,12 @@ ul li a:hover{
 .sinSubrayar{
 	text-decoration: none;
 }
-
+*/
 /*termina nav*/
 
 /*empieza contenido principal*/
 
-main{
+/*main{
 	grid-area: main;
 	display: flex;
 	flex-direction: row;
@@ -160,13 +163,13 @@ iframe{
 	width: 250px;
 	height: 200px;
 
-}
+}*/
 
 /*termina empieza contenido principal*/
 
  /* empieza footer*/
 
-footer{
+/*footer{
 	grid-area: footer;
 	border-style: none;
 	display: flex;
@@ -184,24 +187,24 @@ footer{
 
 footer div a img{
 	width:  40px;
-}
+}*/
 
  /* termina footer*/
 
 
 
-@media only screen and (max-width: 280px){
+/*@media only screen and (max-width: 280px){
 	body{
 	grid-template-columns: 50vw 50vw;
 	grid-template-rows: 15vh 25vh 40vh 20vh;
 	grid-template-areas: "header header" 
 	"main main" "nav nav" 
 	"footer footer";	
-}
+}*/
 
 /*empieza encabezado*/
 
-header{
+/*header{
 	grid-area: header;
 	display: flex;
 	flex-direction: column;
@@ -222,12 +225,12 @@ h1{
 	text-align: center;
 	color: darkblue;
 }
-
+*/
 /*termina encabezado*/
 
 /*empieza nav*/
 
-nav{
+/*nav{
 	grid-area: nav;
 	border-style: none;
 	margin: 15px;
@@ -263,14 +266,14 @@ ul li a:hover{
 .sinSubrayar{
 	text-decoration: none;
 }
-
+*/
 /*termina nav*/
 
 
 
 /*empieza contenido principal*/
 
-main{
+/*main{
 	grid-area: main;
 	display: flex;
 	flex-direction: row;
@@ -335,13 +338,13 @@ iframe{
 	width: 200px;
 	height: 80px;
 
-}
+}*/
 
 /*termina empieza contenido principal*/
 
 /* empieza footer*/
 
-footer{
+/*footer{
 	grid-area: footer;
 	border-style: none;
 	display: flex;
@@ -359,6 +362,6 @@ footer{
 
 footer div a img{
 	width:  20px;
-}
+}*/
 
  /* termina footer*/
