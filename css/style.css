@@ -22,6 +22,10 @@ body{
 	"footer footer footer";	
 }*/
 
+img[src="img/LOGO-14.svg"]{
+		width: 300px;
+	}
+
 /*empieza encabezado*/
 /*
 header{
@@ -35,13 +39,12 @@ header{
 header img:hover{
 	height: 75px;
 	width: 75px;
-}
+}*/
 
-.logoWidth{
-	width: 60px;
-	animation-duration: 2s;
+.animation{
+	animation-duration: 3s;
 	animation-name: aparecer;
-	animation-iteration-count: infinite;
+	animation-iteration-count: initial;
 }
 
 @keyframes aparecer{
@@ -53,53 +56,47 @@ header img:hover{
 	}
 }
 
-h1{
-	font-size: 5rem;
-	text-decoration: none;
-	text-align: center;
-	color: darkblue;
-}*/
+#encabezado{
+	font-size: 4rem;
+}
 
 /*termina encabezado*/
 
 /*empieza nav*/
 
-/*nav{
-	grid-area: nav;
-	border-style: none;
-	margin: 15px;
-	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	
-}
- 
-.liText{
-	border-style: none;
-	font-weight: 160;
+#botonera{
 	font-size: 4rem;
-	list-style: none;
+	color: #F28E98;
 	flex-direction: column;
 	align-items: center;
-}
 
-
-ul li a:hover{
-	color: darkred;
-	font-weight: 600;
-}
-
-
-.ulFlex{
-	
-}
-
-
-.sinSubrayar{
-	text-decoration: none;
 }
 */
+
+nav ul li a:hover{
+	color: orange;
+	font-weight: 800;
+}
+
+.nav li:first-child{
+	background-color: pink;
+}
+
+.nav li:nth-child(4){
+	background-color: hotpink;
+}
+
+/*
+.ulFlex{
+	
+}*/
+
+
+.textColor{
+	text-decoration: none;
+	color: #F28E98;
+}
+
 /*termina nav*/
 
 /*empieza contenido principal*/
@@ -110,25 +107,16 @@ ul li a:hover{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}*/
+
+.imgTransform{
+	transform: translate(5px, 10px);
 }
 
-.imgWidth{
-	width: 180px;
-	padding top: 10px;
-	margin top: 10px;
-	border-style: none;
-	transform: translate(10px, 20px);
-	animation-duration: 2s;
-	animation-name: aparecer;
-	animation-iteration-count: infinite;
+.carouselPointer:hover{
+	cursor: pointer;
 }
-
-.imgWidth:hover{
-	height: 250px;
-	width: 200px;
-}
-
-.mainContacto{
+/*.mainContacto{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -192,21 +180,10 @@ iframe{
 
  /* empieza footer*/
 
-/*footer{
-	grid-area: footer;
-	border-style: none;
-	display: flex;
-	margin: 3px;
-	padding: 2px;
+#footer{
+	font-size: 4rem;
+	color: #F28E98;
  }
-
-.pieDepagina{
-	font-size: 3rem;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: flex-end;
-	color: darkblue;
-}
 
 footer div a img{
 	width:  40px;
@@ -216,14 +193,11 @@ footer div a img{
 
 
 
-/*@media only screen and (max-width: 280px){
-	body{
-	grid-template-columns: 50vw 50vw;
-	grid-template-rows: 15vh 25vh 40vh 20vh;
-	grid-template-areas: "header header" 
-	"main main" "nav nav" 
-	"footer footer";	
-}*/
+@media (min-width: 380px) and (max-width: 700px){
+	img[src="img/LOGO-14.svg"]{
+		width: 40px;
+	}
+}
 
 /*empieza encabezado*/
 
@@ -263,23 +237,15 @@ h1{
 
 /*empieza nav*/
 
-/*nav{
-	grid-area: nav;
-	border-style: none;
-	margin: 15px;
-	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+#botonera{
+	font-size: 4rem;
+	color: #F28E98;
+	flex-direction: column!important;
+	align-items: center!important;
 	
 }
  
-.liText{
-	border-style: none;
-	font-weight: 160;
-	font-size: 3rem;
-	list-style: none;
-	text-align: center;
+#list{
 	flex-direction: column;
 	align-items: center;
 }
@@ -313,22 +279,16 @@ ul li a:hover{
 	justify-content: center;
 	align-items: center;
 }
-
-.imgWidth{
-	width: 80px;
-	padding top: 5px;
-	margin top: 5px;
-	border-style: none;
+*/
+.imgTransform{
 	transform: translate(5px, 10px);
-	animation-duration: 2s;
-	animation-name: aparecer;
-	animation-iteration-count: infinite;
 }
 
-.imgWidth:hover{
-	height: 125px;
-	width: 100px;
+
+.carouselPointer:hover{
+	cursor: pointer;
 }
+/*
 .mainContacto{
 	display: flex;
 }
@@ -378,27 +338,21 @@ iframe{
 	width: 200px;
 	height: 80px;
 
-}*/
-
+}
+*/
 /*termina empieza contenido principal*/
 
 /* empieza footer*/
 
-/*footer{
-	grid-area: footer;
-	border-style: none;
-	display: flex;
-	margin: 2px;
-	padding: 1px;
- }
-
-.pieDepagina{
+#footer{
 	font-size: 1.5rem;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
 	color: darkblue;
-}
+	
+ }
+
 
 footer div a img{
 	width:  20px;
