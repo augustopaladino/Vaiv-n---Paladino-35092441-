@@ -1,361 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Shizuru&display=swap');
-
-*{ 
-	font-family: 'Cookie', cursive;
-	margin: 0;
-	padding: 0;
-}
-html{
-	font-size: 62.5%;
-}
-
-body{
-	background-color: #E7E4D3;
-}
-/*body{
-	background-image: url(../img/brushes.jpg);
-	display: grid;
-	grid-template-columns: 30vw 40vw 30vw;
-	grid-template-rows: 25vh 60vh 25vh;
-	grid-template-areas: "header header header" 
-	 "main main nav" 
-	"footer footer footer";	
-}*/
-
-img[src="img/LOGO-14.svg"]{
-		width: 300px;
-	}
-
-/*empieza encabezado*/
-/*
-header{
-	grid-area: header;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-
-header img:hover{
-	height: 75px;
-	width: 75px;
-}*/
-
-.animation{
-	animation-duration: 3s;
-	animation-name: aparecer;
-	animation-iteration-count: initial;
-}
-
-@keyframes aparecer{
-	0%{
-		opacity: 0;
-	}
-	100% {
-		opacity: 1
-	}
-}
-
-#encabezado{
-	font-size: 4rem;
-}
-
-/*termina encabezado*/
-
-/*empieza nav*/
-
-#botonera{
-	font-size: 4rem;
-	color: #F28E98;
-	flex-direction: column;
-	align-items: center;
-
-}
-*/
-
-nav ul li a:hover{
-	color: orange;
-	font-weight: 800;
-}
-
-.nav li:first-child{
-	background-color: pink;
-}
-
-.nav li:nth-child(4){
-	background-color: hotpink;
-}
-
-/*
-.ulFlex{
-	
-}*/
-
-
-.textColor{
-	text-decoration: none;
-	color: #F28E98;
-}
-
-/*termina nav*/
-
-/*empieza contenido principal*/
-
-/*main{
-	grid-area: main;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}*/
-
-.imgTransform{
-	transform: translate(5px, 10px);
-}
-
-.carouselPointer:hover{
-	cursor: pointer;
-}
-/*.mainContacto{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.mainRestauraciones{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: center;
-}
-
-.mainSobremi{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	color: darkblue;
-}
-
-.mainTapizados{
-	display: flex;
-	flex-direction: column;
-	justify-content: center
-	font-size: 1.8rem;
-	color: darkblue;
-
-}
-
-form, legend, label{
-	color: darkblue;
-	font-size: 2.5rem;
-	flex-direction: row;
-
-}
-
-h2{
-	font-size: 3rem;
-}
-
-p{
-	font-size: 2.5rem;
-	margin: 10px;
-	padding: 10px;
-	color: darkblue;
-}
-
-
-input{
-	width: 150px;
-	height: 10px;
-}
-
-iframe{
-	width: 250px;
-	height: 200px;
-
-}*/
-
-/*termina empieza contenido principal*/
-
- /* empieza footer*/
-
-#footer{
-	font-size: 4rem;
-	color: #F28E98;
- }
-
-footer div a img{
-	width:  40px;
-}*/
-
- /* termina footer*/
-
-
-
-@media (min-width: 380px) and (max-width: 700px){
-	img[src="img/LOGO-14.svg"]{
-		width: 40px;
-	}
-}
-
-/*empieza encabezado*/
-
-/*header{
-	grid-area: header;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
-
-.logoWidth{
-	width: 60px;
-	animation-duration: 2s;
-	animation-name: aparecer;
-	animation-iteration-count: infinite;
-}
-
-@keyframes aparecer{
-	0%{
-		opacity: 0;
-	}
-	100% {
-		opacity: 1
-	}
-}
-
-
-h1{
-	font-size: 2rem;
-	text-decoration: none;
-	text-align: center;
-	color: darkblue;
-}
-*/
-/*termina encabezado*/
-
-/*empieza nav*/
-
-#botonera{
-	font-size: 4rem;
-	color: #F28E98;
-	flex-direction: column!important;
-	align-items: center!important;
-	
-}
- 
-#list{
-	flex-direction: column;
-	align-items: center;
-}
-
-
-
-ul li a:hover{
-	color: darkred;
-	font-weight: 600;
-}
-
-.navContacto{
-	display: none;
-}
-
-
-.sinSubrayar{
-	text-decoration: none;
-}
-*/
-/*termina nav*/
-
-
-
-/*empieza contenido principal*/
-
-/*main{
-	grid-area: main;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-*/
-.imgTransform{
-	transform: translate(5px, 10px);
-}
-
-
-.carouselPointer:hover{
-	cursor: pointer;
-}
-/*
-.mainContacto{
-	display: flex;
-}
-
-.mainRestauraciones{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: center;
-}
-
-
-.mainSobremi, p{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	font-size: 1.8rem;
-	color: darkblue;
-}
-
-.mainTapizados{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	font-size: 1.8rem;
-	color: darkblue;
-
-}
-
-h2{
-	font-size: 2rem;
-}
-
-form, legend, label{
-	color: darkblue;
-	font-size: 1rem;
-
-}
-
-
-input{
-	width: 60px;
-	height: 4px;
-}
-
-iframe{
-	width: 200px;
-	height: 80px;
-
-}
-*/
-/*termina empieza contenido principal*/
-
-/* empieza footer*/
-
-#footer{
-	font-size: 1.5rem;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
-	color: darkblue;
-	
- }
-
-
-footer div a img{
-	width:  20px;
-}*/
-
- /* termina footer*/
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Shizuru&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #E7E4D3;
+  font-family: "Cookie", cursive; }
+  body header img {
+    width: 25%; }
+  body header .sinSubrayar {
+    text-decoration: none; }
+    body header .sinSubrayar h1 {
+      font-size: 4rem;
+      color: #F28E98; }
+
+.animation {
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.carouselPointer:hover {
+  cursor: pointer; }
+
+#botonera {
+  font-family: "Cookie", cursive;
+  font-size: 4rem;
+  color: #F28E98;
+  flex-direction: column !important;
+  align-items: center !important; }
+  #botonera li {
+    color: #F28E98; }
+    #botonera li:hover {
+      color: yellow;
+      font-weight: 600; }
+
+#footer {
+  font-family: "Cookie", cursive;
+  font-size: 4rem;
+  color: #F28E98;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center; }
+  #footer img {
+    width: 40px; }

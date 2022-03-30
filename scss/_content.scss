@@ -1,0 +1,46 @@
+html{
+	font-size: 62.5%;
+	
+}
+
+body{
+	background-color: #E7E4D3;
+	font-family: $fontMain;
+	header {
+			
+			img{
+					width:$w-25;
+				}
+					
+				.sinSubrayar{
+				text-decoration: none;
+					
+							h1{
+								font-size: $textXl;
+								color: $textColor;
+								}
+							}
+			}
+	}
+
+
+.animation{
+animation-duration: 3s;
+animation-name: aparecer;
+animation-iteration-count: initial;
+}
+						
+@keyframes aparecer{
+0%{
+	opacity: 0;
+}
+100% {
+	opacity: 1;
+}
+}				
+
+.carouselPointer:hover{
+	cursor: pointer;
+}
+
+

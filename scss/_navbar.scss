@@ -1,0 +1,17 @@
+#botonera{
+	font-family: $fontMain;
+	font-size: 4rem;
+	color: #F28E98;
+	flex-direction: column!important;
+	align-items: center!important;
+					li{
+						color: #F28E98;
+						  &:hover{
+							color: yellow;
+							font-weight: 600;
+								}
+						}
+			}
+
+
+
