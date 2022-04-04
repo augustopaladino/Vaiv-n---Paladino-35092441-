@@ -1,11 +1,8 @@
 
 #footer{
-	font-family: $fontMain;
-	font-size: $textXl;
-	color: $textColor;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
+	background-color: map-get($map:$paleta,$key:'tres');
+	@include texto(4rem, white);
+	@include flex(center,center)
 			img{
 		width:  40px;
 				}

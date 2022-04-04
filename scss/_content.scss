@@ -4,43 +4,68 @@ html{
 }
 
 body{
-	background-color: #E7E4D3;
+	background-color: map-get($map:$paleta,$key:'cuatro');
 	font-family: $fontMain;
 	header {
-			
-			img{
-					width:$w-25;
+			nav{
+		 	background-color: map-get($map:$paleta,$key:'tres');
+		}
+			a img{ width: $w-25;
 				}
+			a img, .animation{
+					animation-duration: 3s;
+					animation-name: aparecer;
+					animation-iteration-count: initial;
+					}
+											
+					@keyframes aparecer{
+					0%{
+						opacity: 0;
+					}
+					100% {	
+						opacity: 1;
+					}
+					}
 					
-				.sinSubrayar{
-				text-decoration: none;
-					
-							h1{
-								font-size: $textXl;
-								color: $textColor;
-								}
-							}
 			}
+	main{
+			h2{
+				font-family: $fontMain;
+				color: $textColor;
+				font-size: $textLg;
+			}
+			p{
+			 	@extend h2;
+			 	font-family: $fontSecondary;
+			 	font-size: $textMd;
+			}
+
+			img, iframe, .animation{
+					animation-duration: 3s;
+					animation-name: aparecer;
+					animation-iteration-count: initial;
+					}
+											
+					@keyframes aparecer{
+					0%{
+						opacity: 0;
+					}
+					100% {
+						opacity: 1;
+					}
+			}
+				img{ &:hover{
+				cursor: pointer;
+					}
+				}
+
+
+					
+			}	
+		
 	}
 
 
-.animation{
-animation-duration: 3s;
-animation-name: aparecer;
-animation-iteration-count: initial;
-}
-						
-@keyframes aparecer{
-0%{
-	opacity: 0;
-}
-100% {
-	opacity: 1;
-}
-}				
-
-.carouselPointer:hover{
-	cursor: pointer;
-}
+			
 
 

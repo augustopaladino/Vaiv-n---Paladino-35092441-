@@ -9,34 +9,47 @@ html {
 body {
   background-color: #E7E4D3;
   font-family: "Cookie", cursive; }
-  body header img {
+  body header nav {
+    background-color: #E1CBA6; }
+  body header a img {
     width: 25%; }
-  body header .sinSubrayar {
-    text-decoration: none; }
-    body header .sinSubrayar h1 {
-      font-size: 4rem;
-      color: #F28E98; }
-
-.animation {
-  animation-duration: 3s;
-  animation-name: aparecer;
-  animation-iteration-count: initial; }
+  body header a img, body header .animation {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
 
 @keyframes aparecer {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+  body main h2, body main p {
+    font-family: "Cookie", cursive;
+    color: #F28E98;
+    font-size: 3rem; }
+  body main p {
+    font-family: "Shizuru", cursive;
+    font-size: 2rem; }
+  body main img, body main iframe, body main .animation {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial; }
 
-.carouselPointer:hover {
-  cursor: pointer; }
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  body main img:hover {
+    cursor: pointer; }
 
 #botonera {
   font-family: "Cookie", cursive;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #F28E98;
-  flex-direction: column !important;
-  align-items: center !important; }
+  text-decoration: none;
+  flex-direction: row !important;
+  align-items: flex-end !important; }
   #botonera li {
     color: #F28E98; }
     #botonera li:hover {
@@ -44,9 +57,10 @@ body {
       font-weight: 600; }
 
 #footer {
-  font-family: "Cookie", cursive;
+  background-color: #E1CBA6;
   font-size: 4rem;
-  color: #F28E98;
+  color: white;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center; }

@@ -1,9 +1,10 @@
 #botonera{
 	font-family: $fontMain;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	color: #F28E98;
-	flex-direction: column!important;
-	align-items: center!important;
+	text-decoration: none;
+	flex-direction: row!important;
+	align-items: flex-end!important;
 					li{
 						color: #F28E98;
 						  &:hover{

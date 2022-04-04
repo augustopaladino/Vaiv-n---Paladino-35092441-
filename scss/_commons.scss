@@ -1,4 +1,25 @@
+$paleta: (
+    'uno': #FF9985,
+    'dos': #DECFB8,
+    'tres':#E1CBA6,
+    'cuatro':#E7E4D3,
+    'cinco':#F28E98,);
+
 
 $w-100:100%;
 $w-50:50%;
 $w-25:25%;
+
+@mixin texto($font-size, $color){
+    font-size: $font-size;
+    color: $color;
+   }
+
+
+
+@mixin flex($justify, $align){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: $justify;
+    align-content: $align;
+}
