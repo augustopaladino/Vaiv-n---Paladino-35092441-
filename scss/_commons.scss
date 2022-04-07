@@ -17,9 +17,9 @@ $w-25:25%;
 
 
 
-@mixin flex($justify, $align){
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: $justify;
-    align-content: $align;
+@mixin flex($flow, $justify, $align){
+    display: flex !important;
+    flex-flow: $flow !important;
+    justify-content: $justify !important;
+    align-content: $align !important; 
 }

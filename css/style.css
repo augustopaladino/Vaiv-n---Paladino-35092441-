@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&family=Indie+Flower&display=swap");
 * {
   padding: 0;
   margin: 0; }
@@ -8,9 +8,7 @@ html {
 
 body {
   background-color: #E7E4D3;
-  font-family: "Cookie", cursive; }
-  body header nav {
-    background-color: #E1CBA6; }
+  font-family: "Grape Nuts", cursive; }
   body header a img {
     width: 25%; }
   body header a img, body header .animation {
@@ -23,13 +21,19 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  body main h2, body main p {
-    font-family: "Cookie", cursive;
+  body main h2, body main p, body main form {
+    font-family: "Grape Nuts", cursive;
     color: #F28E98;
     font-size: 3rem; }
-  body main p {
-    font-family: "Shizuru", cursive;
-    font-size: 2rem; }
+  body main p, body main form {
+    font-family: "Indie Flower", cursive;
+    font-size: 3rem;
+    margin-right: 20px; }
+  body main form {
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: space-between !important;
+    align-content: center !important; }
   body main img, body main iframe, body main .animation {
     animation-duration: 3s;
     animation-name: aparecer;
@@ -40,29 +44,52 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
+  body main iframe {
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: space-between !important;
+    align-content: center !important; }
   body main img:hover {
     cursor: pointer; }
 
 #botonera {
-  font-family: "Cookie", cursive;
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  justify-content: space-between !important;
+  align-content: center !important;
+  font-family: "Grape Nuts", cursive;
   font-size: 2.5rem;
   color: #F28E98;
-  text-decoration: none;
-  flex-direction: row !important;
-  align-items: flex-end !important; }
-  #botonera li {
+  text-decoration: none; }
+  #botonera a {
     color: #F28E98; }
-    #botonera li:hover {
-      color: yellow;
-      font-weight: 600; }
+    #botonera a:hover {
+      color: yellowgreen;
+      font-weight: 400; }
+  @media (max-width: 720px) {
+    #botonera {
+      display: flex !important;
+      flex-flow: column !important;
+      justify-content: flex-end !important;
+      align-content: end !important;
+      font-family: "Grape Nuts", cursive;
+      font-size: 2rem;
+      color: #F28E98;
+      text-decoration: none; }
+      #botonera a {
+        color: #F28E98; }
+        #botonera a:hover {
+          color: yellowgreen;
+          font-weight: 400; } }
 
 #footer {
-  background-color: #E1CBA6;
-  font-size: 4rem;
-  color: white;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center; }
+  font-size: 3rem;
+  color: #F28E98;
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: center !important;
+  align-content: center !important;
+  margin: 15px;
+  padding: 15px; }
   #footer img {
     width: 40px; }

@@ -7,9 +7,6 @@ body{
 	background-color: map-get($map:$paleta,$key:'cuatro');
 	font-family: $fontMain;
 	header {
-			nav{
-		 	background-color: map-get($map:$paleta,$key:'tres');
-		}
 			a img{ width: $w-25;
 				}
 			a img, .animation{
@@ -37,7 +34,13 @@ body{
 			p{
 			 	@extend h2;
 			 	font-family: $fontSecondary;
-			 	font-size: $textMd;
+			 	font-size: $textLg;
+			 	margin-right: 20px;
+			}
+
+			form{
+				@include flex(column nowrap,space-between,center);
+				@extend p;
 			}
 
 			img, iframe, .animation{
@@ -54,6 +57,10 @@ body{
 						opacity: 1;
 					}
 			}
+
+				iframe{
+					@include flex(column nowrap,space-between,center);
+				}
 				img{ &:hover{
 				cursor: pointer;
 					}
@@ -64,8 +71,4 @@ body{
 			}	
 		
 	}
-
-
-			
-
 

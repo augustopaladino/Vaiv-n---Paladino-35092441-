@@ -1,8 +1,9 @@
 
 #footer{
-	background-color: map-get($map:$paleta,$key:'tres');
-	@include texto(4rem, white);
-	@include flex(center,center)
+	@include texto(3rem, #F28E98);
+	@include flex(row wrap,center,center);
+	margin: 15px;
+	padding: 15px;
 			img{
 		width:  40px;
 				}
