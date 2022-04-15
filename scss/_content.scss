@@ -38,7 +38,7 @@ body{
 			 	margin-right: 20px;
 			}
 
-			form{
+			section,form{
 				@include flex(column nowrap,space-between,center);
 				@extend p;
 			}
@@ -60,6 +60,15 @@ body{
 
 				iframe{
 					@include flex(column nowrap,space-between,center);
+					@media(max-width: 720px) {
+						width: $w-75;
+
+					}
+					@media(max-width: 540px) {
+						width: $w-50;
+
+					}
+
 				}
 				img{ &:hover{
 				cursor: pointer;

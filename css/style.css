@@ -21,15 +21,15 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-  body main h2, body main p, body main form {
+  body main h2, body main p, body main section, body main form {
     font-family: "Grape Nuts", cursive;
     color: #F28E98;
     font-size: 3rem; }
-  body main p, body main form {
+  body main p, body main section, body main form {
     font-family: "Indie Flower", cursive;
     font-size: 3rem;
     margin-right: 20px; }
-  body main form {
+  body main section, body main form {
     display: flex !important;
     flex-flow: column nowrap !important;
     justify-content: space-between !important;
@@ -49,6 +49,12 @@ body {
     flex-flow: column nowrap !important;
     justify-content: space-between !important;
     align-content: center !important; }
+    @media (max-width: 720px) {
+      body main iframe {
+        width: 75%; } }
+    @media (max-width: 540px) {
+      body main iframe {
+        width: 50%; } }
   body main img:hover {
     cursor: pointer; }
 
